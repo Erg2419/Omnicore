@@ -1,0 +1,72 @@
+{"timestamp":"2025-11-24 20:39:39","usuario":"API","accion":"Mesa actualizada","detalles":"Mesa ID 1 actualizada","ip":"::1"}
+{"timestamp":"2025-11-24 20:42:26","usuario":"API","accion":"Mesa actualizada","detalles":"Mesa ID 1 actualizada","ip":"::1"}
+{"timestamp":"2025-11-24 20:42:28","usuario":"API","accion":"Mesa actualizada","detalles":"Mesa ID 1 actualizada","ip":"::1"}
+{"timestamp":"2025-11-24 20:42:31","usuario":"API","accion":"Mesa actualizada","detalles":"Mesa ID 7 actualizada","ip":"::1"}
+{"timestamp":"2025-11-24 20:42:32","usuario":"API","accion":"Mesa actualizada","detalles":"Mesa ID 7 actualizada","ip":"::1"}
+{"timestamp":"2025-11-24 20:42:33","usuario":"API","accion":"Mesa actualizada","detalles":"Mesa ID 7 actualizada","ip":"::1"}
+{"timestamp":"2025-11-24 20:42:37","usuario":"API","accion":"Mesa actualizada","detalles":"Mesa ID 1 actualizada","ip":"::1"}
+{"timestamp":"2025-11-24 20:45:17","usuario":"API","accion":"Mesa actualizada","detalles":"Mesa ID 7 actualizada","ip":"::1"}
+{"timestamp":"2025-11-24 20:45:19","usuario":"API","accion":"Mesa actualizada","detalles":"Mesa ID 7 actualizada","ip":"::1"}
+{"timestamp":"2025-11-24 20:50:29","usuario":"API","accion":"Mesa eliminada","detalles":"Mesa M01 eliminada","ip":"::1"}
+{"timestamp":"2025-11-24 20:50:32","usuario":"API","accion":"Mesa eliminada","detalles":"Mesa M02 eliminada","ip":"::1"}
+{"timestamp":"2025-11-24 20:50:35","usuario":"API","accion":"Mesa eliminada","detalles":"Mesa M03 eliminada","ip":"::1"}
+{"timestamp":"2025-11-24 20:50:37","usuario":"API","accion":"Mesa eliminada","detalles":"Mesa M04 eliminada","ip":"::1"}
+{"timestamp":"2025-11-24 20:50:39","usuario":"API","accion":"Mesa eliminada","detalles":"Mesa M05 eliminada","ip":"::1"}
+{"timestamp":"2025-11-24 20:50:41","usuario":"API","accion":"Mesa eliminada","detalles":"Mesa M06 eliminada","ip":"::1"}
+{"timestamp":"2025-11-24 20:55:46","usuario":"API","accion":"Mesa creada","detalles":"Mesa Mesa 07 creada","ip":"::1"}
+{"timestamp":"2025-11-24 20:56:07","usuario":"API","accion":"Mesa eliminada","detalles":"Mesa 2 eliminada","ip":"::1"}
+{"timestamp":"2025-11-24 20:56:10","usuario":"API","accion":"Mesa eliminada","detalles":"Mesa 1 eliminada","ip":"::1"}
+{"timestamp":"2025-11-24 20:56:12","usuario":"API","accion":"Mesa eliminada","detalles":"Mesa 3 eliminada","ip":"::1"}
+{"timestamp":"2025-11-24 20:56:18","usuario":"API","accion":"Mesa eliminada","detalles":"Mesa Mesa 07 eliminada","ip":"::1"}
+{"timestamp":"2025-11-24 20:56:20","usuario":"API","accion":"Mesa eliminada","detalles":"Mesa 6 eliminada","ip":"::1"}
+{"timestamp":"2025-11-24 20:56:22","usuario":"API","accion":"Mesa eliminada","detalles":"Mesa 5 eliminada","ip":"::1"}
+{"timestamp":"2025-11-24 21:09:52","usuario":"API","accion":"Mesa actualizada","detalles":"Mesa ID 10 actualizada","ip":"::1"}
+{"timestamp":"2025-11-24 21:10:05","usuario":"API","accion":"Mesa eliminada","detalles":"Mesa 1 eliminada","ip":"::1"}
+{"timestamp":"2025-11-24 21:10:16","usuario":"API","accion":"Mesa creada","detalles":"Mesa M01 creada","ip":"::1"}
+{"timestamp":"2025-11-24 21:10:23","usuario":"API","accion":"Mesa actualizada","detalles":"Mesa ID 14 actualizada","ip":"::1"}
+{"timestamp":"2025-11-24 21:10:24","usuario":"API","accion":"Mesa actualizada","detalles":"Mesa ID 14 actualizada","ip":"::1"}
+{"timestamp":"2025-11-24 21:10:46","usuario":"API","accion":"Mesa actualizada","detalles":"Mesa ID 14 actualizada","ip":"::1"}
+{"timestamp":"2025-11-24 21:10:53","usuario":"API","accion":"Mesa actualizada","detalles":"Mesa ID 14 actualizada","ip":"::1"}
+{"timestamp":"2025-11-24 21:15:26","usuario":"API","accion":"Producto eliminado","detalles":"Producto Pisco Sour eliminado","ip":"::1"}
+{"timestamp":"2025-11-24 21:15:53","usuario":"API","accion":"Mesa actualizada","detalles":"Mesa ID 14 actualizada","ip":"::1"}
+{"timestamp":"2025-11-24 21:15:55","usuario":"API","accion":"Mesa actualizada","detalles":"Mesa ID 14 actualizada","ip":"::1"}
+{"timestamp":"2025-11-25 00:15:27","usuario":"API","accion":"Mesa actualizada","detalles":"Mesa ID 14 actualizada","ip":"::1"}
+{"timestamp":"2025-11-25 00:15:30","usuario":"API","accion":"Mesa actualizada","detalles":"Mesa ID 14 actualizada","ip":"::1"}
+{"timestamp":"2025-11-25 00:15:35","usuario":"API","accion":"Mesa actualizada","detalles":"Mesa ID 14 actualizada","ip":"::1"}
+{"timestamp":"2025-11-25 00:15:37","usuario":"API","accion":"Mesa actualizada","detalles":"Mesa ID 14 actualizada","ip":"::1"}
+{"timestamp":"2025-11-25 00:15:46","usuario":"API","accion":"Mesa actualizada","detalles":"Mesa ID 14 actualizada","ip":"::1"}
+{"timestamp":"2025-11-27 12:02:56","usuario":"API","accion":"Mesa creada","detalles":"Mesa Mesa 7 creada","ip":"::1"}
+{"timestamp":"2025-11-27 12:05:07","usuario":"API","accion":"Mesa actualizada","detalles":"Mesa ID 15 actualizada","ip":"::1"}
+{"timestamp":"2025-11-27 14:09:52","usuario":"API","accion":"Mesa creada","detalles":"Mesa M03 creada","ip":"::1"}
+{"timestamp":"2025-11-27 19:35:34","usuario":"API","accion":"Mesa actualizada","detalles":"Mesa ID 15 actualizada","ip":"::1"}
+{"timestamp":"2025-11-27 19:35:55","usuario":"API","accion":"Mesa creada","detalles":"Mesa Mesa 7 creada","ip":"::1"}
+{"timestamp":"2025-11-27 19:36:03","usuario":"API","accion":"Mesa eliminada","detalles":"Mesa Mesa 7 eliminada","ip":"::1"}
+{"timestamp":"2025-11-27 20:54:23","usuario":"API","accion":"Mesa actualizada","detalles":"Mesa ID 15 actualizada","ip":"::1"}
+{"timestamp":"2025-11-27 20:54:45","usuario":"API","accion":"Mesa eliminada","detalles":"Mesa 1 eliminada","ip":"::1"}
+{"timestamp":"2025-11-27 20:54:47","usuario":"API","accion":"Mesa eliminada","detalles":"Mesa 2 eliminada","ip":"::1"}
+{"timestamp":"2025-11-27 20:54:53","usuario":"API","accion":"Mesa actualizada","detalles":"Mesa ID 16 actualizada","ip":"::1"}
+{"timestamp":"2025-11-27 20:54:59","usuario":"API","accion":"Mesa eliminada","detalles":"Mesa 3 eliminada","ip":"::1"}
+{"timestamp":"2025-11-27 20:55:01","usuario":"API","accion":"Mesa eliminada","detalles":"Mesa 4 eliminada","ip":"::1"}
+{"timestamp":"2025-11-27 20:55:04","usuario":"API","accion":"Mesa eliminada","detalles":"Mesa 5 eliminada","ip":"::1"}
+{"timestamp":"2025-11-27 20:55:06","usuario":"API","accion":"Mesa eliminada","detalles":"Mesa 6 eliminada","ip":"::1"}
+{"timestamp":"2025-11-27 20:55:13","usuario":"API","accion":"Mesa actualizada","detalles":"Mesa ID 15 actualizada","ip":"::1"}
+{"timestamp":"2025-11-27 22:27:45","usuario":"API","accion":"Estado de reserva cambiado","detalles":"Reserva #1 cambi\u00f3 de pendiente a confirmada","ip":"::1"}
+{"timestamp":"2025-11-27 22:27:55","usuario":"API","accion":"Estado de reserva cambiado","detalles":"Reserva #1 cambi\u00f3 de confirmada a cancelada","ip":"::1"}
+{"timestamp":"2025-11-27 22:28:57","usuario":"API","accion":"Reserva eliminada","detalles":"Reserva #1 eliminada","ip":"::1"}
+{"timestamp":"2025-11-27 22:32:52","usuario":"API","accion":"Estado de reserva cambiado","detalles":"Reserva #2 cambi\u00f3 de pendiente a confirmada","ip":"::1"}
+{"timestamp":"2025-11-27 22:33:00","usuario":"API","accion":"Estado de reserva cambiado","detalles":"Reserva #2 cambi\u00f3 de confirmada a completada","ip":"::1"}
+{"timestamp":"2025-11-27 22:34:06","usuario":"API","accion":"Reserva eliminada","detalles":"Reserva #2 eliminada","ip":"::1"}
+{"timestamp":"2025-11-27 23:17:05","usuario":"API","accion":"Mesa actualizada","detalles":"Mesa ID 15 actualizada","ip":"::1"}
+{"timestamp":"2025-11-27 23:17:06","usuario":"API","accion":"Mesa actualizada","detalles":"Mesa ID 16 actualizada","ip":"::1"}
+{"timestamp":"2025-11-27 23:17:10","usuario":"API","accion":"Mesa actualizada","detalles":"Mesa ID 15 actualizada","ip":"::1"}
+{"timestamp":"2025-11-27 23:17:11","usuario":"API","accion":"Mesa actualizada","detalles":"Mesa ID 16 actualizada","ip":"::1"}
+{"timestamp":"2025-11-27 23:18:33","usuario":"API","accion":"Estado de reserva cambiado","detalles":"Reserva #3 cambi\u00f3 de pendiente a confirmada","ip":"::1"}
+{"timestamp":"2025-11-27 23:18:42","usuario":"API","accion":"Estado de reserva cambiado","detalles":"Reserva #3 cambi\u00f3 de confirmada a cancelada","ip":"::1"}
+{"timestamp":"2025-11-27 23:18:48","usuario":"API","accion":"Reserva eliminada","detalles":"Reserva #3 eliminada","ip":"::1"}
+{"timestamp":"2025-11-27 23:19:48","usuario":"API","accion":"Mesa actualizada","detalles":"Mesa ID 15 actualizada","ip":"::1"}
+{"timestamp":"2025-11-27 23:19:49","usuario":"API","accion":"Mesa actualizada","detalles":"Mesa ID 16 actualizada","ip":"::1"}
+{"timestamp":"2025-11-27 23:19:51","usuario":"API","accion":"Mesa actualizada","detalles":"Mesa ID 15 actualizada","ip":"::1"}
+{"timestamp":"2025-11-27 23:19:52","usuario":"API","accion":"Mesa actualizada","detalles":"Mesa ID 16 actualizada","ip":"::1"}
+{"timestamp":"2025-11-27 23:20:56","usuario":"API","accion":"Estado de reserva cambiado","detalles":"Reserva #4 cambi\u00f3 de pendiente a confirmada","ip":"::1"}
+{"timestamp":"2025-11-27 23:21:07","usuario":"API","accion":"Estado de reserva cambiado","detalles":"Reserva #4 cambi\u00f3 de confirmada a cancelada","ip":"::1"}
+{"timestamp":"2025-11-27 23:21:16","usuario":"API","accion":"Reserva eliminada","detalles":"Reserva #4 eliminada","ip":"::1"}
