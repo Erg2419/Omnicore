@@ -1,0 +1,41 @@
+/* ===== GLOBAL ===== */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* ===== SIDEBAR Y CONTENEDOR ===== */
+@media (max-width: 768px) {
+  #sidebar {
+    transform: translateX(-100%);
+    position: fixed;
+    z-index: 50;
+    width: 70%;
+  }
+
+  #sidebar.active {
+    transform: translateX(0);
+  }
+
+  #mainContent {
+    margin-left: 0;
+  }
+}
+
+/* ===== TABLAS ===== */
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* ===== FORMULARIOS ===== */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+@media (min-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}

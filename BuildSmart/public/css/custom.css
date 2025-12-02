@@ -1,0 +1,10 @@
+/* public/css/custom.css */
+.btn {
+  background: #f97316;
+  color: white;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  display: inline-block;
+  text-decoration: none;
+}
+.btn:hover { opacity: 0.95; }
