@@ -1,0 +1,230 @@
+<?php
+include 'db.php';
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+    $nombre = $_POST['nombre'];
+    $email = $_POST['email'];
+    $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+    
+    // Verificar si el email ya existe
+    $check_sql = "SELECT id FROM usuarios WHERE email = ?";
+    $check_stmt = $conn->prepare($check_sql);
+    $check_stmt->bind_param("s", $email);
+    $check_stmt->execute();
+    $check_result = $check_stmt->get_result();
+    
+    if($check_result->num_rows > 0){
+        $error = "Este email ya está registrado.";
+    } else {
+        $sql = "INSERT INTO usuarios (nombre, email, password) VALUES (?, ?, ?)";
+        $stmt = $conn->prepare($sql);
+        $stmt->bind_param("sss", $nombre, $email, $password);
+        
+        if($stmt->execute()){
+            $user_id = $stmt->insert_id;
+            
+            // Crear configuración por defecto
+            $config_sql = "INSERT INTO configuraciones_usuario (usuario_id) VALUES (?)";
+            $config_stmt = $conn->prepare($config_sql);
+            $config_stmt->bind_param("i", $user_id);
+            $config_stmt->execute();
+            $config_stmt->close();
+            
+            $success = "Usuario registrado correctamente. <a href='index.php' class='link-login'>Iniciar sesión</a>";
+        } else {
+            $error = "Error: " . $conn->error;
+        }
+        $stmt->close();
+    }
+    $check_stmt->close();
+}
+?>
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registro FIBGEN</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+<style>
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0F2027, #203A43, #2C5364);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(20px);
+    padding: 60px 50px;
+    border-radius: 30px;
+    box-shadow: 0 25px 60px rgba(0,0,0,0.6);
+    width: 400px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 1s ease;
+}
+
+.logo {
+    font-size: 40px;
+    font-weight: 700;
+    color: #FFD700;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-shadow: 0 0 15px #FFD700, 0 0 30px #FFC107;
+}
+
+.message {
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    animation: fadeIn 0.8s ease;
+    display: inline-block;
+}
+
+.success {
+    background: rgba(0, 255, 127, 0.2);
+    color: #00FF7F;
+    box-shadow: 0 5px 15px rgba(0, 255, 127, 0.3);
+}
+
+.error {
+    background: rgba(255, 99, 71, 0.2);
+    color: #FF6347;
+    box-shadow: 0 5px 15px rgba(255, 99, 71, 0.3);
+}
+
+.link-login {
+    color: #FFD700;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.link-login:hover {
+    text-decoration: underline;
+}
+
+.input-group {
+    position: relative;
+    margin: 20px 0;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 14px 15px;
+    padding-right: 45px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: #ffffff;
+    color: #333;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    transition: border 0.3s ease;
+}
+
+.input-group input:focus {
+    border: 2px solid #FFD700;
+}
+
+.input-group input::placeholder {
+    color: #666;
+}
+
+.input-group i {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #FFD700;
+    z-index: 2;
+}
+
+button {
+    width: 100%;
+    padding: 16px;
+    margin-top: 10px;
+    background: #FFD700;
+    color: #0F2027;
+    font-weight: 600;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+button:hover {
+    background: #FFC107;
+    transform: translateY(-2px);
+}
+
+.login-link {
+    margin-top: 20px;
+    display: inline-block;
+    color: #00FFFF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.login-link:hover {
+    color: #FFD700;
+    text-decoration: underline;
+}
+
+@keyframes fadeIn {
+    from {opacity:0; transform: translateY(-30px);}
+    to {opacity:1; transform: translateY(0);}
+}
+
+@media(max-width: 420px){
+    .container {width: 90%; padding: 40px 20px;}
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="logo"><i class="fas fa-dumbbell"></i> FIBGEN</div>
+
+    <?php 
+    if(isset($error)) echo "<div class='message error'>$error</div>"; 
+    if(isset($success)) echo "<div class='message success'>$success</div>"; 
+    ?>
+
+    <form method="post" autocomplete="off">
+        <div class="input-group">
+            <input type="text" name="nombre" placeholder="Nombre" required autocomplete="off">
+            <i class="fas fa-user"></i>
+        </div>
+        <div class="input-group">
+            <input type="email" name="email" placeholder="Correo electrónico" required autocomplete="off">
+            <i class="fas fa-envelope"></i>
+        </div>
+        <div class="input-group">
+            <input type="password" name="password" placeholder="Contraseña" required autocomplete="new-password">
+            <i class="fas fa-lock"></i>
+        </div>
+        <button type="submit">Registrarse</button>
+    </form>
+    <a href="index.php" class="login-link">Volver al login</a>
+</div>
+</body>
+</html>
+<?php $conn->close(); ?>
